@@ -1,0 +1,1 @@
+web: gunicorn ciproject4.wsgi:application
