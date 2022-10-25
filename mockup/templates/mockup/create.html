@@ -18,43 +18,36 @@
         <!-- SHIRT CONTAINER -->
         <section class="shirt-container">
         <div class="current-tee">
-            <img class="tee" src={% static "images/mens-tee-front-black.png" %} />
+            <img class="tee" src="/media/mens-tee-front-black.png" />
         </div>
         <div class="current-design">
             <div id="design-target" class="print-area">
-                <!-- <div class="image-resize-container"> -->
-                    <!-- <img id="design-display" class="upload-art" src="" /> -->
-                    <!-- <img id="design-display" src={% static "images/geo-flower.png" %} /> -->
                     <img id="design-display" src="" />
                     <p id="text-display"></p>
                 <!-- </div> -->
             </div>
         </div>
-    
-    
+
+
         </section>
         <!-- INFO CONTAINER -->
         <section class="info-container">
-    
-        <!-- FORM SECTION -->
-        <form enctype="multipart/form-data" method="POST" action="">
-        {% csrf_token %}
-    
+
         <!-- GARMENT STYLE -->
-        <section class="garment hide">
+        <section id="garment-control" class="garment mobile-info-display">
             <h3>Garment Options</h3>
             <div class="flex-row">
                 <div class="flex-row">
                     <div class="dropdown-container">
                     <div class="dropdown">
-                        <button type="button" class="dropdown-button">
+                        <button class="dropdown-button">
                             <span class="button-label">Style</span>
                             <i class="fa fa-angle-down"></i>
                         </button>
                         <ul class="dropdown-options">
                             <li class="dropdown-option is-selected" id="Mens-tee">Mens Tee</li>
-                            <li class="dropdown-option" id="Womens-tee">Womens Tee</li>
-                            <li class="dropdown-option" id="Youth-tee">Youth Tee</li>
+                            <!-- <li class="dropdown-option" id="Womens-tee">Womens Tee</li>
+                            <li class="dropdown-option" id="Youth-tee">Youth Tee</li> -->
                         </ul>
                     </div>
                     </div>
@@ -64,19 +57,19 @@
                     </span>
                     </div>
                 </div>
-    
+
                 <!-- GARMENT POSITION -->
                 <div class="flex-row">
                     <div class="dropdown-container">
                     <div class="dropdown">
-                        <button type="button" class="dropdown-button">
+                        <button class="dropdown-button">
                             <span class="button-label">Placement</span>
                             <i class="fa fa-angle-down"></i>
                         </button>
                         <ul class="dropdown-options">
                             <li class="dropdown-option is-selected" id="Front">Front</li>
-                            <li class="dropdown-option" id="Back">Back</li>
-                            <li class="dropdown-option" id="Sleeve">Sleeve</li>
+                            <!-- <li class="dropdown-option" id="Back">Back</li>
+                            <li class="dropdown-option" id="Sleeve">Sleeve</li> -->
                         </ul>
                     </div>
                     </div>
@@ -88,7 +81,7 @@
                 </div>
             </div>
             <hr />
-    
+
             <!-- GARMENT COLOR -->
             <div class="flex-row">
                 <div class="flex-row">
@@ -96,56 +89,56 @@
                     <span class="current-value">Black</span>
                 </div>
                 <div class="flex-row">
-                    <div class="garment-swatch black is-selected"></div>
-                    <div class="garment-swatch silver"></div>
+                    <!-- <div class="garment-swatch black is-selected"></div> -->
+                    <!-- <div class="garment-swatch silver"></div>
                     <div class="garment-swatch navy"></div>
                     <div class="garment-swatch red"></div>
                     <div class="garment-swatch white"></div>
-                    <div class="garment-swatch charcoal"></div>
+                    <div class="garment-swatch charcoal"></div> -->
                 </div>
             </div>
+            <span type="button" class="mobile-close"> CLOSE </span>
         </section>
         <!-- end of garment section  -->
-    
+
         <!-- IMAGE SECTION -->
-        <section class="image-container">
+        <section id="image-control" class="image-container mobile-info-display">
             <div class="flex-row-between">
                 <h3>Image Options</h3>
                 <p class="image-instr">Useable art files: <br />
                     <span class="image-instr-bold">png</span> with a transparent background <br />
-                    <!-- <span class="image-instr-bold">svg</span> vector file -->
+                    <span class="image-instr-bold">svg</span> vector file
                 </p>
             </div>
             <div class="flex-row image-design">
-    
+
             <!-- upload file button, masked with a styled button -->
-            <!-- <input id="image-input" type="file" /> -->
-            {{ form.document }}
+            <input id="image-input" type="file" />
             <button type="button" id="upload-button" class="image-upload">Upload Image</button>
-            <button type="button" id="width-plus" class="size-control"><i class="fas fa-plus"></i></button>
-            <button type="button" id="width-minus" class="size-control"><i class="fas fa-minus"></i></button>
+            <button id="width-plus" class="size-control"><i class="fas fa-plus"></i></button>
+            <button id="width-minus" class="size-control"><i class="fas fa-minus"></i></button>
                 <span>Width:</span>
                 <span class="current-value current-width"></span>
                 <span>Height:</span>
                 <span class="current-value current-height"></span>
             </div>
+            <span type="button" class="mobile-close"> CLOSE </span>
         </section>
-    
+
         <!-- TEXT SECTION -->
-        <section class="text-design">
+        <section id="text-control" class="text-design mobile-info-display">
             <!-- TEXT FONT SECTION -->
             <h3>Text Options</h3>
-            <!-- <input id="custom-text" class="custom-text" type="text" placeholder="Add Your Text Here" /> -->
-            {{ form.text }}
-    
-            <button type="button" id="text-plus" class="size-control"><i class="fas fa-plus"></i></button>
-            <button type="button" id="text-minus" class="size-control"><i class="fas fa-minus"></i></button>
-    
+            <input id="custom-text" class="custom-text" type="text" placeholder="Add Your Text Here" />
+
+            <button id="text-plus" class="size-control"><i class="fas fa-plus"></i></button>
+            <button id="text-minus" class="size-control"><i class="fas fa-minus"></i></button>
+
             <div class="flex-row">
                 <div class="flex-row-between">
                     <div class="dropdown-container">
                     <div class="dropdown">
-                        <button type="button" class="dropdown-button">
+                        <button class="dropdown-button">
                             <span class="button-label">Font</span>
                             <i class="fa fa-angle-down"></i>
                         </button>
@@ -157,12 +150,29 @@
                     </div>
                     </div>
                     <div class="value-container">
-                    <span id="font-value" class="current-value">Lobster</span>
+                    <span id="font-value" class="current-value">
+                        Lobster
+                    </span>
                     </div>
                 </div>
-    
-                <!-- TEXT COLOR SECTION -->
+
+                    <!-- TEXT COLOR SECTION -->
+
                 <div class="flex-row">
+                    <!-- <div class="dropdown-container">
+                    <div class="dropdown">
+                        <button class="dropdown-button">
+                            <span class="button-label">Text Color</span>
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-options">
+                            <li class="dropdown-option" id="Red">Red</li>
+                            <li class="dropdown-option" id="Black">Black</li>
+                            <li class="dropdown-option is-selected" id="White">White</li>
+                        </ul>
+                    </div>
+                    </div> -->
+
                     <div>
                     <input type="color" id="color-choice" name="color-choice"
                     value="#e64a4b" />
@@ -170,58 +180,86 @@
                     </div>
                     <div class="value-container">
                     <span id="text-color-value" class="current-value">
-                        #e64a4b
+                        #E64A4B
                     </span>
                     </div>
                 </div>
             </div>
+            <span class="mobile-close"> CLOSE </span>
         </section>
-        <!-- end of text color section  -->
-    
+        <!-- end of text Section  -->
+
         <!-- DEFAULT IMAGE SECTION -->
-        <section class="default-container">
+        <section id="default-control" class="default-container mobile-info-display">
             <p class="image-instr">Don't have an image ready? Use one of ours.</p>
             <button type="button" class="default-image">
-                <img src={% static "images/geo-flower.png" %} />
+                <img src="images/geo-flower.png" />
             </button>
             <button type="button" class="default-image black">
-                <img src={% static "images/flaming-bunny.png" %} />
+                <img src="images/flaming-bunny.png" />
             </button>
             <button type="button" class="default-image black">
-                <img src={% static "images/sugar-skull.svg" %} />
+                <img src="images/sugar-skull.svg" />
             </button>
+            <span type="button" class="mobile-close"> CLOSE </span>
         </section>
-    
-        <hr />
-        <!-- FORM SECTION CONTD-->
-    
-                {{ form.shirtStyle }}
-                {{ form.shirtPlacement }}
-                {{ form.shirtColor }}
-                {{ form.artWidth }}
-                {{ form.artPosTop }}
-                {{ form.artPosLeft }}
-    
-    
+
+        <!-- <hr> -->
+        <!-- SAVE SECTION -->
+        <!-- <form method="POST" action=".">
+
+            <input type="hidden" name="style-value-hidden" value="MensTee" />
+
             <div class="flex-column save-container">
-                {{ form.textFont }}
-                {{ form.textSize }}
-                {{ form.textColor }}
-                {{ form.textPosTop }}
-                {{ form.textPosLeft }}
-    
-                {{ form.title.errors }}
-                {{ form.title }}
-                {{ form.title.help_text }}
-    
-    
-                <button type="submit" id="form_save" class="save">SAVE</button>
+                <input class="design-title" type="text" placeholder="Add Design Name" />
+                <button type="button" class="save">SAVE</button>
             </div>
-    
-        </form>
-    
+
+        </form> -->
+
         </section>
         <!-- end of info Container  -->
+
+        <section class="flex-row mobile-label">
+
+        </section>
+
+        <section class="flex-row mobile-position">
+        <div id="mb-left" class="mobile-icon-pos">
+            <i class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div id="mb-right" class="mobile-icon-pos">
+            <i class="fas fa-arrow-circle-right"></i>
+        </div>
+        <div id="mb-up" class="mobile-icon-pos">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+        <div id="mb-down" class="mobile-icon-pos">
+            <i class="fas fa-arrow-circle-down"></i>
+        </div>
+        <div id="mb-plus" class="mobile-icon-pos">
+            <i class="fas fa-plus-circle"></i>
+        </div>
+        <div id="mb-minus" class="mobile-icon-pos">
+            <i class="fas fa-minus-circle"></i>
+        </div>
+        </section>
+
+        <section class="flex-row mobile-controls">
+        <div id="mb-garment" class="mobile-icon">
+            <i class="fas fa-tshirt"></i>
+        </div>
+        <div id="mb-image" class="mobile-icon">
+            <i class="fas fa-file-image"></i>
+        </div>
+        <div id="mb-text" class="mobile-icon">
+            <i class="fas fa-font"></i>
+        </div>
+        <div id="mb-default" class="mobile-icon">
+            <i class="fas fa-question"></i>
+        </div>
+        </section>
+
+
     </main>
- 
 {% endblock %}
