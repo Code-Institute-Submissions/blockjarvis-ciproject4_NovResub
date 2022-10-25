@@ -1,3 +1,4 @@
+
 import os
 
 from django.shortcuts import render, redirect
@@ -16,24 +17,28 @@ from .forms import LoginForm, DesignForm
 from .models import Design
 
 
+def mocked_home(request):
+    return render(request, 'mocked/home.html')
+
 def design_list(request):
     designs = Design.objects.all()
-    return render(request, 'mockup/design_list.html', {'designs': designs})
+    return render(request, 'mocked/design_list.html', {'designs': designs})
 
 def design(request):
     designs = Design.objects.all()
-    return render(request, 'mockup/design.html', {'designs': designs})
+    return render(request, 'mocked/design.html', {'designs': designs})
 
 # def create(request):
-#     return render(request, 'mockup/create.html')
+#     return render(request, 'mocked/create.html')
 
 
 # Design SHOW
 def created_design(request, pk):
     design = Design.objects.get(id=pk)
-    return render(request, 'mockup/created_design.html', {'design': design})
+    return render(request, 'mocked/created_design.html', {'design': design})
 
 # Create a new design
+# @login_required
 def create(request):
     designs = Design.objects.all()
     if request.method == 'POST':
@@ -50,10 +55,40 @@ def create(request):
             # design.save()
             design = form.save()
             print("LINE 65")
-            return render(request, 'mockup/design_list.html', {'designs': designs})
+            return render(request, 'mocked/design_list.html', {'designs': designs})
     else:
         form = DesignForm()
-    return render(request, 'mockup/create.html', {'form': form})
+    return render(request, 'mocked/create.html', {'form': form})
+
+
+def login_user(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        raw_password = request.POST['password']
+        user = authenticate(username=username, password=raw_password)
+        login(request, user)
+        return redirect('mocked_home')
+    else:
+        form = LoginForm()
+    return render(request, 'mocked/login.html', {'form': form})
+
+def logout_user(request):
+    logout(request)
+    return redirect('mocked/mocked_home.html')
+
+def signup_user(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('mocked_home')
+    else:
+        form = UserCreationForm()
+    return render(request, 'mocked/signup.html', {'form': form})
 
 # Image File Upload to Database
 # @require_POST
@@ -62,4 +97,3 @@ def create(request):
 #     path = default_storage.save(save_path, request.FILES['file'])
 #     document = Document.objects.create(document=path, upload_by=request.user)
 #     return JsonResponse({'document': document.id})
-
