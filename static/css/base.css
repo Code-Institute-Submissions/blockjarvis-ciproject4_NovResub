@@ -28,13 +28,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #343a40;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #343a40;
     color: white;
 }
 
@@ -326,4 +326,27 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+}
+
+/*-- ===== (buttonsm) style ==== -- */
+.buttonsm {
+    background-color: #343a40;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 2px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+}
+    .buttonsm {border-radius: 7px;}
+    
+    .buttonsm:hover {
+    background-color: #000000;
+    color: white;
 }
