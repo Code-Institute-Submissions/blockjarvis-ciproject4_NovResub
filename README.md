@@ -1,6 +1,6 @@
 # Understore
 
-![Mockup](\media\readme\responsive.png)
+![Mockup](/media/readme/responsive.png)
 
 This comprehensive site was designed for a ecommerce site. The focus of the site is to provide a functional ecommerce site with a clean and modern design.
 
@@ -41,104 +41,68 @@ The purpose is to design an attractive website to buy products and interact with
 
 - The Montserrat font is used throughout the website with Sans Serif.
 
-### Wireframes
-
-#### Home
-1. [Desktop home.html](static/images/readme/wireframe/homedesktop.png)
-
-2. [Mobile home.html](static/images/readme/wireframe/homeandroid.png)
-
-3. [Tablet home.html](static/images/readme/wireframe/hometablet.png)
-
-#### New Bargain
-1. [Desktop newbargain.html](static/images/readme/wireframe/newbargaindesktop.png)
-
-2. [Mobile newbargain.html](static/images/readme/wireframe/newbargainandroid.png)
-
-3. [Tablet newbargain.html](static/images/readme/wireframe/newbargaintablet.png)
-
-#### Profile
-1. [Desktop profile.html](static/images/readme/wireframe/profiledesktop.png)
-
-2. [Mobile profile.html](static/images/readme/wireframe/profileandroid.png)
-
-3. [Tablet profile.html](static/images/readme/wireframe/profiletablet.png)
-
-#### Log In
-1. [Desktop login.html](static/images/readme/wireframe/logindesktop.png)
-
-2. [Mobile login.html](static/images/readme/wireframe/loginandroid.png)
-
-3. [Tablet login.html](static/images/readme/wireframe/logintablet.png)
-
 ## Existing Features
 
 ### Navigation Bar
 
-![Navbar](static/images/readme/navbarloggedoff.png)
-![Navbar](static/images/readme/navbaruserlogin.png)
-![Navbar](static/images/readme/navbaradminlogin.png)
+![Navbar](/media/readme/navbarloggedoff.png)
+![Navbar](/media/readme/navbarloginuser.png)
+![Navbar](/media/readme/navbaradminlogin.png)
 
-The navigation bar contains links to Home, Log In, Log Out, Register, Profile and New Bargain. When logged as Admin, Manage Categories and Reports pages available.
+The navigation bar contains links to Home, Log In, Log Out, Register, Profile, Products divided by categories and How it Works. When logged as Admin, Product Management available.
 
 This section will allow the user to have an easier navigation from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 
 
 ### Footer
 
-![Footer](static/images/readme/socialmedia.png)
+![Footer](/media/readme/footer.png)
 
-The footer provides the user links to the social media accounts (Youtube, Instagram, Facebook and Twitter).
+The footer provides the user links to the social media accounts (Youtube, Instagram, Facebook and Twitter), only used on home page to keep the reset of the site cleaner.
 
 ### Home Page
-- Logo
 
-![Logo](static/images/readme/logo.png)
+![Home page](/media/readme/home.png)
 
-- Bargains (Logged off).
+### Products Page
 
-![Part I](static/images/readme/bargainsloggedoff.png)
+![Products page](/media/readme/products.png)
 
-- Bargains (Logged In, buttons to edit or delete your own Bargain).
+### How It Works Page
 
-![Part II](static/images/readme/bargainsloggedin.png)
+![How It Works Page](/media/readme/howitworks.png)
 
-- When the user expand one of the bargains, the image, comment, link to the bargain, who created and report button will be available.
+### Try Your Design Page
 
-![Part II](static/images/readme/bargainexpension.png)
-
-
-### Edit Bargain Page
-
-![Edit Bargain page](static/images/readme/editbargain.png)
-
-### Report Bargain Page
-
-![Report Bargain page](static/images/readme/reportbargainpage.png)
+![Try Your Design Page](/media/readme/tryourdesign.png)
 
 ### Profile Page
 
-![Profile page](static/images/readme/profilepage.png)
+![Profile page](/media/readme/profile.png)
 
-### New Bargain Page
+### New Product Page
 
-![New Bargain page](static/images/readme/newbargainpage.png)
+![New Product Page](/media/readme/newproduct.png)
 
-### Manage Categories Page
+### Edit Product Page
 
-![Manage Categories page](static/images/readme/managecategoriespage.png)
-
-### Reports Page
-
-![Reports page](static/images/readme/reportspage.png)
+![Edit Product Page](/media/readme/editproduct.png)
 
 ### Register Page
 
-![Register page](static/images/readme/registerpage.png)
+![Register page](/media/readme/register.png)
 
 ### Log In Page
 
-![Log In page](static/images/readme/loginpage.png)
+![Log In page](/media/readme/login.png)
+
+### Bag Page
+
+![Bag page](/media/readme/bag.png)
+
+### Checkout Page
+
+![Checkout page](/media/readme/checkout.png)
 
 ## Frameworks, Languages & Programs Used
 
@@ -170,6 +134,19 @@ The footer provides the user links to the social media accounts (Youtube, Instag
 ### [Fontawesome](https://fontawesome.com/)
 - Icons library and toolkit.
 
+### [Django](https://django.com/)
+- Django was used to create the framework.
+
+### [Stripe](https://stripe.com/)
+- Stripe was used to accept and authorise payment for any item purchased on the site.
+
+### [AWS](https://s3.console.aws.amazon.com/)
+- Amazon S3 was used to manage and save media and static files.
+
+### [AWS](https://heroku.com/)
+- Heroku was used to deploy our app.
+
+
 ## Testing
 
 ### Development Testing
@@ -185,17 +162,18 @@ The footer provides the user links to the social media accounts (Youtube, Instag
 1. When each link is clicked, it opens a new tab.
 2. When each link is clicked, it takes the user to the correct page.
 
-- Forms
-1. When submitted the bargain or category is added to the database. 
-2. Edit bargain function was tested multiple times by the developer.
+- Products
+1. When submitted a new product is added to the database. 
+2. Edit product function was tested multiple times by the developer.
 
 - Log in and Register
 1. Log in and Register working according to the pattern defined on code (A-Z, 0-9).
 2. When registered, user is successfully added to the database, profile and permissions working accordingly.
 
-- Report and Reports Page
-1. When the user clicks on Report, data is loading properly and is added to the database.
-2. The Admin can check all reports on Reports Page and delete them after review.
+- Purchase
+1. When the user clicks on purchase, data is loading properly and is added to the database together with stripe process.
+2. Add and remove itens from bag manually tested.
+3. Webhooks working properly.
 
 - Buttons
 1. All the buttons have been tested multiple times.
@@ -206,71 +184,64 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 - W3C Markup Validator
 
-![Markup HTML](static/images/readme/htmlvalidation.png)
+![Markup HTML](/media/readme/htmlchecker.png)
 
-Warning on base.html, Validator can't identify inside python code.
-![Warning](static/images/readme/warningvalidation.png)
+   - Same ID is needed as one occurence is on base.html and the other on mobile-top-header.html.
+   - Tested the JS without the type attribute and the application didn't work properly. 
 
 - W3C CSS Validator 
 
-![Markup CSS](static/images/readme/cssvalidation.png)
+![Markup CSS](/media/readme/csschecker.png)
 
 - PowerMapper 
 
-![PowerMapper](static/images/readme/powermapvalidation.png)
-
-- PEP8 Validator 
-
-![PEP8](static/images/readme/pep8validation.png)
+![PowerMapper](/media/readme/powermapper.png)
 
 ## Testing User Stories from User Experience (UX) Section
 ### First Time Visitor Goals
-1. As a first time visitor, I want to easily see the bargains.
-    - At first glance the user can already see the bargains.
-    - The bargain contains the category, name and more than 50% discount toggle.
-    - When expanded, the user can find more details about the bargain. 
+1. As a first time visitor, I want to easily see the products.
+    - At first glance the user can already see the products clicking on Shop Now.
+    - The Nav bar contain links to the products divided by categories.. 
   
-2. As a first time visitor, I want to register and add my own bargain.
-   - After register, the user can find the New Bargain link on NavBar and easily add a new deal.
-   - The user must select a category,choose a name, image, description, link to the deal page and can turn on the toggle if the discount is more than 50%. 
+1. 2. As a first time visitor, I want to register and add products to my bag.
+   - Register process is easy and the user can add products to the bag and keep shopping.
+   - User can skip to checkout process through a toast window.
 
 ### Returning Visitor Goals
-1. As a Returning Visitor, I want to check new bargains.
+1. As a Returning Visitor, I want to check products by categories.
 
-2. As a Returning Visitor, I want to manage my added bargain.
-    - When logged in, the user can manage his bargains on Profile page.
+2. As a Returning Visitor, I want to buy products.
+    - The user can use the information provided at registration process or in profile, making the purchase process easier.
 
-3. As a Returning Visitor, I want to be able to access your social media accounts.
-    - The footer presents icons with links to the social medias.
-    - Each link opens the social media in a new page.
+3. As a Returning Visitor, I want to be able to access my profile and check my purchase.
+    - The user can check his information at profile and purchase details.
+    - On order details is possible to check order ID, billing address and other important informations.
 
 ### Frequent User Goals
-1. As a Frequent User, I want to check the bargains daily.
-2. As a Frequent User, I want to edit my bargain, delete when expired and report other bargains if necessary.
-    - The user can delete/edit his bargain on Profile Page or finding it on Main Page.
-    - If the bargain posted by another user harms the community, it is possible to report it.  
+1. As a Frequent User, I want to check new products.
+2. As a Frequent User, I want to try my image on the product.
+    - On try your design, the user can try some text and upload image to test on a t-shirt model.
+    - You can resize the image and the text input.
 
 ### Admin Goals
-1. As an Admin User, I want to manage the Categories.
-    - The Admin has access to the Manage Categories page, where he can add or delete Device Categories or Report Categories.
-2. As an Admin User, I want to manage the Reports from users.
-    - The Admin has access to the Reports page, where it is possible to check the reports made by users and delete it.
+1. 1. As an Admin User, I want to delete and edit products.
+    - The admin can delete or entirely edit the product.
+2. As an Admin User, I want to add more products by category.
 
 ### Issues
-- Some commands for MongoDB used on lessons were Deprecated, for instance, update() and remove().
 - Had an issue with Procfile during the deployment to Heroku, file was saved as UTF-16, changed to UTF-8 to fix it.
-- Using a javascript for confirmation button when deleting something. The script was deleting the wrong item, as when the pop-up was created the cache was lost. Had to properly identify the item by ID.
-![Reports page](static/images/readme/deleteissue.png)
+- Try your Design feature not suitable for mobile.
 
 ### Known Bugs
 
 - On old devices, the images can break the layout.
-- Cards and collapsible layout can break depending of text size.
+- Products layout can break depending of text size.
+- Products image differ in size breaking the layout harmony.
 
 ### Future Improvements
 
-- Select Bargains by category.
-- Sort bargains by date.
+- Try your design for mobile, more base products to test it, save button for your created design, posting on user's profile.
+- Instead of receiving the user image by email, create a post system or a dashboard where admin and user can interacte.
 
 ## Deployment
 
@@ -278,7 +249,7 @@ This project was developed using Visual Studio Code Insiders, committed to git a
 
 ### Deployment to Heroku
 
-The live link can be found here - https://game-bargain.herokuapp.com/
+The live link can be found here - https://understore.herokuapp.com/
 
 ### Deploying on Heroku
 
@@ -321,25 +292,30 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type git clone, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
+   
+### AWS S3
+
+The AWS account creation and all the process involved was made using the Codeinstitute tutorial and updated PDF version.
 
 ## Credits
 
 ### Code
 
-- MaterializeCSS was used through the project mainly the navbar, collapsible and the cards.
-- Authentication methods, connecting to MongoDB and Heroku codes used from Codeinstitute mini project videos.
-- Confirmation pop-up code in JS from [W3School](https://www.w3schools.com/).
+- MaterializeCSS was used through the project.
+- Authentication methods, connecting to AWS and Heroku codes used from Codeinstitute mini project videos.
+- This project is based on Boutique Ado Project, teached by Codeinstitute.
+- Try your Design application was based on [oxleberry](https://github.com/oxleberry/) project.
 
 ### Media
 1. Images were sourced from [Unsplash](https://unsplash.com/).
   
 2. All icons were sourced from [Fontawesome](https://fontawesome.com/).
 
-3. Photoshop was used by a graphic designer to make the logo (Rodrigo Lorenzo).
+3. Photoshop was used by a graphic designer to make the background (Rodrigo Lorenzo).
 
 4. Deploying on Heroku explained steps from [KSheridan86](https://github.com/KSheridan86).
 
 ### Acknowledgements
 - [Tim Nelson](https://github.com/TravelTimN) for explaining in a way that makes everything easy.
 - Student care and fellow students at Code Institute for their support.
-- I would like to thank my friends, Diego Laterza and Rodrigo Lorenzo for their help and guidance through the process.
+- I would like to thank my friend, Diego Laterza for his help and guidance through the process.
