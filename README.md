@@ -2,7 +2,7 @@
 
 ![Mockup](/media/readme/responsive.png)
 
-This comprehensive site was designed for a ecommerce site. The focus of the site is to provide a functional ecommerce site with a clean and modern design.
+This comprehensive site was designed for an ecommerce site. The focus of the site is to provide a functional ecommerce site with a clean and modern design.
 
 This is the fourth of four Milestone Projects that the developer must complete during the Full Stack Web Development Program at The Code Institute.
 
@@ -143,7 +143,7 @@ The footer provides the user links to the social media accounts (Youtube, Instag
 ### [AWS](https://s3.console.aws.amazon.com/)
 - Amazon S3 was used to manage and save media and static files.
 
-### [AWS](https://heroku.com/)
+### [Heroku](https://heroku.com/)
 - Heroku was used to deploy our app.
 
 
@@ -203,7 +203,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
     - At first glance the user can already see the products clicking on Shop Now.
     - The Nav bar contain links to the products divided by categories.. 
   
-1. 2. As a first time visitor, I want to register and add products to my bag.
+2. As a first time visitor, I want to register and add products to my bag.
    - Register process is easy and the user can add products to the bag and keep shopping.
    - User can skip to checkout process through a toast window.
 
@@ -224,7 +224,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
     - You can resize the image and the text input.
 
 ### Admin Goals
-1. 1. As an Admin User, I want to delete and edit products.
+1. As an Admin User, I want to delete and edit products.
     - The admin can delete or entirely edit the product.
 2. As an Admin User, I want to add more products by category.
 
