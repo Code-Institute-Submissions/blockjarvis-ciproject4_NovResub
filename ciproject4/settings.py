@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'mocked',
+    'howitworks',
 
     # Other
     'crispy_forms',
