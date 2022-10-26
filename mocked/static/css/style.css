@@ -1,16 +1,6 @@
 
 /* BASE STYLES ========================================= */
 
-* {
-   box-sizing: border-box;
-}
-
-body {
-   margin: 0;
-   padding: 0;
-   font-family: 'Barlow', sans-serif;
-}
-
 .flex-row {
    display: flex;
    /* flex-direction: row; */
@@ -48,72 +38,7 @@ button:focus {
   outline: none;
 }
 
-/* WELCOME ========================= */
-
-.welcome-tee-container {
-   margin-top: 0;
-   width: 470px;
-   /* width: 48%; */
-   position: relative;
-}
-
-.welcome {
-   padding: 3em 4em;
-   text-align: center;
-}
-
-.welcome h2 {
-   margin-top: 0.5em;
-}
-
-.welcome-info-container {
-   max-width: 50%;
-   border: 8px solid #34485f;
-   background-color: white;
-}
-
-.welcome p {
-   padding: 0 2em;
-}
-
-
-.welcome-buffer {
-   width: 27%;
-}
-
-.welcome-control {
-   background-image: linear-gradient(#fff, #ebf0f5);
-   height: 53px;
-   width: 41px;
-   border-radius: 3px;
-   border: 1px solid #a8b6c5;
-   font-size: .8em;
-   color: #34475f;
-}
-
-.try {
-   text-align: center;
-   margin-top: 2em;
-   margin-bottom: 1em;
-}
-
-.started-button {
-   margin: 0 auto;
-   margin-top: 0.6em;
-   font-size: 1em;
-   color: #34475f;
-   /* background-image: linear-gradient(#fff, #ebf0f5); */
-   padding: .8em 4em;
-   border: 3px solid #42576f;
-   border-radius: 3px;
-}
-
 /* MAIN ========================= */
-
-main {
-   background-color: #e8e3dc;
-   padding: 2em 2em 3em;
-}
 
 .shirt-container,
 .info-container,
@@ -131,11 +56,12 @@ main {
    width: 470px;
    /* width: 48%; */
    position: relative;
+   border: 8px solid #343a40;
 }
 
 .info-container {
    /* width: 50%; */
-   border: 8px solid #34485f;
+   border: 8px solid #343a40;
 }
 
 /* TEE CONTAINER ===================== */
@@ -254,7 +180,7 @@ input[type="color" i] {
 }
 
 .image-instr {
-   color: #8ca6c1;
+   color: #343a40;
    margin: 0;
    /* max-width: 27em; */
    margin-bottom: .8em;
@@ -266,52 +192,6 @@ input[type="color" i] {
    font-weight: 900;
    text-transform: uppercase;
    font-size: 1.1em;
-}
-
-/* GALLERY CONTAINER ===================== */
-
-.gallery-title {
-   text-align: center;
-   font-size: 2.2em;
-   margin: 0;
-   /* padding-top: 1em; */
-   text-transform: uppercase;
-}
-
-.gallery-display {
-   position: absolute;
-   width: 150px;
-   left: 54px;
-   top: 50px;
-}
-
-.gallery-text-display {
-   /* font-size: 3em; */
-   color: #e64a4b;
-   /* left: 66.6875px; */
-   position: inherit;
-   margin: -24px 0;
-   /* font-family: 'Lobster', sans-serif; */
-}
-
-.gallery-info-container {
-   display: none;
-   /* display: block; */
-   /* opacity: 0; */
-   width: 45%;
-   background-color: white;
-   margin: 0 auto;
-   margin-top: 1em;
-   justify-content: space-between;
-   box-shadow: 11px 12px 17px 0px rgba(0, 0, 0, 0.3);
-}
-
-.gallery-shirt-container {
-   margin-bottom: 1em;
-}
-
-.gallery-space {
-   margin-bottom: 3em;
 }
 
 /* INFO CONTAINER ===================== */
@@ -413,40 +293,6 @@ main h3 {
    margin-right: 0;
 }
 
-.save-container {
-   margin: 1.5em;
-}
-
-.design-title {
-   height: 54px;
-    width: 40%;
-   border: 2px solid #a8b6c5;
-   /* margin-bottom: 1em; */
-   margin: 0 auto;
-   border-radius: 3px;
-   /* text-indent: 18px; */
-   font-size: .8em;
-   text-align: center;
-}
-
-.save {
-   margin: 0 auto;
-   margin-top: 0.6em;
-   width: 40%;
-   font-size: 1em;
-   color: #34475f;
-   /* background-image: linear-gradient(#fff, #ebf0f5); */
-   padding: .8em 4em;
-   border: 3px solid #42576f;
-   border-radius: 3px;
-}
-
-.save:hover,
-.started-button:hover {
-   border: 3px solid #e64a4b;
-   color: #e7494b;
-}
-
 .default-container {
    text-align: center;
 }
@@ -496,7 +342,7 @@ main h3 {
    height: 40px;
    background: none;
    border: none;
-   background-color: #42586f;
+   background-color: #343a40;
    color: white;
    /* padding: 0 15px; */
    border-radius: 3px;
@@ -520,7 +366,7 @@ main h3 {
    outline: none;
 }
 .dropdown-button:hover {
-   background-color: #e64a4b;
+   background-color: black;
 }
 
 .button-label {
@@ -578,25 +424,6 @@ main h3 {
    height: 40px;
    width: 134px;
    margin-top: .6em;
-}
-
-/* .save-container {
-   border: 4px solid #34485f;
-   padding: .8em;
-   height: auto;
-} */
-
-/* FOOTER ========================= */
-
-footer{
-   height: 56px;
-}
-
-footer p {
-   color: rgba(255,255,255,.4);
-   margin: 0 auto;
-   text-align: center;
-   padding-top: 1em;
 }
 
 @media screen and (max-width: 1000px){

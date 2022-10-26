@@ -107,13 +107,13 @@
          <section class="default-container">
             <p class="image-instr">Don't have an image ready? Use one of ours.</p>
             <button type="button" class="default-image">
-               <img src={% static "images/geo-flower.png" %} />
+               <img src={% static "images/mayc.png" %} />
             </button>
             <button type="button" class="default-image black">
-               <img src={% static "images/flaming-bunny.png" %} />
+               <img src={% static "images/whoopsie.png" %} />
             </button>
             <button type="button" class="default-image black">
-               <img src={% static "images/sugar-skull.svg" %} />
+               <img src={% static "images/quirkies.png" %} />
             </button>
          </section>
 
@@ -126,23 +126,7 @@
                {{ form.artWidth }}
                {{ form.artPosTop }}
                {{ form.artPosLeft }}
-
-
-            <div class="flex-column save-container">
-               {{ form.textFont }}
-               {{ form.textSize }}
-               {{ form.textColor }}
-               {{ form.textPosTop }}
-               {{ form.textPosLeft }}
-
-               {{ form.title.errors }}
-               {{ form.title }}
-               {{ form.title.help_text }}
-
-            </div>
-
          </form>
-
       </section>
    </main>
 </div>
