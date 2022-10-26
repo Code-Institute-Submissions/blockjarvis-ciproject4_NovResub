@@ -15,12 +15,18 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">HOW IT WORKS</h2>
-                <hr>
-            </div>
+    <div class="flex-row text-center">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">HOW IT WORKS</h2>
+            <h3>Find in our store what product you want to customize</h3> <br>
+            <img class="tee" src={% static "images/howitwork.png" %} /> <br><br><br>
+            <h3>Add it to your cart and send to us your design</h3><br><br>
+            <img class="tee" src={% static "images/mens-tee-front-black.png" %} /> <br><br><br>
+            <h3>You can try your design here! (better experience on desktop site)</h3><br><br>
+            <img class="tee" src={% static "images/didizin.png" %} /> <br><br>
+            <a href="{% url 'create' %}" class="buttonsm">TRY IT NOW</a>
+            <hr>
         </div>
+    </div>
 {% endblock %}

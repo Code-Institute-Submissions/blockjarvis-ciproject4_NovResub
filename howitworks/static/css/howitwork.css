@@ -1,0 +1,204 @@
+/*-- ===== align style ==== -- */
+
+.align{
+    text-align: center;
+}
+
+/*-- ===== Body style ==== -- */
+
+body {
+    background-image: url("images/bodybackground.png");
+    background-color: #cccccc;
+   }
+/*-- ===== FOOTER STYLE ==== -- */
+
+/*-- ===== Footer bg ==== -- */
+footer {   
+    background-color: #262626;
+   }
+/*-- ===== Newsletter style ==== -- */
+#newsletter {
+    display: flex;
+    background-image: url(images/newsletterbackground.png);
+    background-color: #cccccc;
+    align-items: center;
+    padding-left: 250px;
+    justify-content: space-around;
+   }
+#formnewsletter {
+    display: flex;
+    flex-direction: column;
+    
+}   
+/*-- ===== Social Media style ==== -- */
+#socialmedia{
+    display: flex;
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+/*-- ===== Disclaimer style ==== -- */
+#disclaimer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+/*-- ===== Social Media and Disclaimer Style ==== --*/
+#footerbot{
+    display: flex;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+  /*-- ===== FONT STYLES ==== -- */
+
+/*-- ===== H1 font style ==== -- */
+h1 {
+    text-align: center;
+    color:white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+/*-- ===== H2 font style ==== -- */
+h2 {
+    text-align:left;
+    color:white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size:30px ;
+}
+/*-- ===== H3 font style ==== -- */
+h3 {
+    text-align:center;
+    color:white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size:30px ;
+}
+/*-- ===== H4 font style ==== -- */
+h4 {
+    text-align: center;
+    color:white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size:37px ;
+}
+/*-- ===== P font style ==== -- */
+p {
+    text-align: center;
+    color:white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size:18px ;
+    }
+/*-- ===== Whitelist font style ==== -- */
+.namegame{
+    text-align:center;
+    color:white; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size:20px ;
+}
+
+/*-- ===== BUTTONS STYLES ==== -- */
+
+/*-- ===== Submit button (button1) style ==== -- */
+.button1 {
+        background-color: #47C0FE;
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 150px;
+    }     
+      .button1 {border-radius: 7px;}
+      
+      .button1:hover {
+        background-color: #555555;
+        color: white;
+    }
+/*-- ===== SM button (buttonsm) style ==== -- */
+.buttonsm {
+    background-color: #303030;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+}
+  .buttonsm {border-radius: 7px;}
+  
+  .buttonsm:hover {
+    background-color: #47C0FE;
+    color: white;
+}
+/*-- ===== premium.html style ==== -- */
+
+/*-- ===== Form style ==== -- */
+.formstyle {
+    background-color: #272727;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 550px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .input {
+    background-color: #323232;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 15px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .formtext{
+    text-align: left;
+    color:white; 
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  /*-- ===== Form and donation methods style ==== -- */
+  #formandpremium{
+    display: flex;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.pcenter{
+    margin: auto;
+    width: 50%;
+}
+
+.pcenter2{
+    margin: auto;
+    width: 70%;
+}
