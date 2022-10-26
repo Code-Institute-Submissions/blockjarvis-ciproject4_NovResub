@@ -32,73 +32,6 @@
       <form enctype="multipart/form-data" method="POST" action="">
          {% csrf_token %}
 
-      <!-- GARMENT STYLE -->
-         <section class="garment hide">
-            <h3>Garment Options</h3>
-            <div class="flex-row">
-               <div class="flex-row">
-                  <div class="dropdown-container">
-                     <div class="dropdown mocked">
-                        <button type="button" class="dropdown-button">
-                           <span class="button-label">Style</span>
-                           <i class="fa fa-angle-down"></i>
-                        </button>
-                        <ul class="dropdown-options">
-                           <li class="dropdown-option is-selected" id="Mens-tee">Mens Tee</li>
-                           <li class="dropdown-option" id="Womens-tee">Womens Tee</li>
-                           <li class="dropdown-option" id="Youth-tee">Youth Tee</li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="value-container">
-                     <span id="style-value" class="current-value">
-                        Mens Tee
-                     </span>
-                  </div>
-               </div>
-
-               <!-- GARMENT POSITION -->
-               <div class="flex-row">
-                  <div class="dropdown-container">
-                     <div class="dropdown mocked">
-                        <button type="button" class="dropdown-button">
-                           <span class="button-label">Placement</span>
-                           <i class="fa fa-angle-down"></i>
-                        </button>
-                        <ul class="dropdown-options">
-                           <li class="dropdown-option is-selected" id="Front">Front</li>
-                           <li class="dropdown-option" id="Back">Back</li>
-                           <li class="dropdown-option" id="Sleeve">Sleeve</li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="value-container">
-                     <span id="placement-value" class="current-value">
-                        Front
-                     </span>
-                  </div>
-               </div>
-            </div>
-            <hr />
-
-            <!-- GARMENT COLOR -->
-            <div class="flex-row">
-               <div class="flex-row">
-                  <span>Color:</span>
-                  <span class="current-value">Black</span>
-               </div>
-               <div class="flex-row">
-                  <div class="garment-swatch black is-selected"></div>
-                  <div class="garment-swatch silver"></div>
-                  <div class="garment-swatch navy"></div>
-                  <div class="garment-swatch red"></div>
-                  <div class="garment-swatch white"></div>
-                  <div class="garment-swatch charcoal"></div>
-               </div>
-            </div>
-         </section>
-         <!-- end of garment section  -->
-
          <!-- IMAGE SECTION -->
          <section class="image-container">
             <div class="flex-row-between">
@@ -206,17 +139,12 @@
                {{ form.title }}
                {{ form.title.help_text }}
 
-
-               <button type="submit" id="form_save" class="save">SAVE</button>
             </div>
 
          </form>
 
       </section>
-      <!-- end of info Container  -->
    </main>
 </div>
-
-
 
 {% endblock %}
