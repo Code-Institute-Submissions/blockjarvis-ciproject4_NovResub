@@ -127,3 +127,4 @@ class DesignForm(forms.ModelForm):
                  'textPosLeft',
                  'title',
                  )
+
