@@ -353,7 +353,7 @@ input[name='q']::placeholder {
 
  /*-- ===== P font style ==== -- */
  p {
-    color:#000000; 
+    color:#343a40; 
     font-family: 'Montserrat', sans-serif;
     font-size:15px ;
     font-weight: 400;
@@ -362,7 +362,7 @@ input[name='q']::placeholder {
  /*-- ===== H1,H2 font style ==== -- */    
 h1,h2,h3{
     text-align: center;
-    color:#1b1a17; 
+    color:#343a40; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -370,7 +370,7 @@ h1,h2,h3{
  /*-- ===== H5,H6 font style ==== -- */    
  h5,h6{
     text-align: center;
-    color:#ffffff; 
+    color:#343a40; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size:17px ;
