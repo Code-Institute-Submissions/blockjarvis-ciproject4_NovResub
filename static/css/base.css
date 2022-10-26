@@ -350,3 +350,28 @@ input[name='q']::placeholder {
     background-color: #000000;
     color: white;
 }
+
+ /*-- ===== P font style ==== -- */
+ p {
+    color:#000000; 
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px ;
+    font-weight: 400;
+}
+
+ /*-- ===== H1,H2 font style ==== -- */    
+h1,h2,h3{
+    text-align: center;
+    color:#1b1a17; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+ /*-- ===== H5,H6 font style ==== -- */    
+ h5,h6{
+    text-align: center;
+    color:#ffffff; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size:17px ;
+}
