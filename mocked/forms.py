@@ -5,6 +5,7 @@ from django.forms import CharField, PasswordInput
 from django.contrib.auth.models import User
 from .models import Design
 
+
 class LoginForm(forms.ModelForm):
     username = CharField(max_length=100)
     password = CharField(widget=PasswordInput())

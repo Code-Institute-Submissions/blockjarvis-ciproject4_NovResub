@@ -1,6 +1,6 @@
 # Understore
 
-![Mockup](static/images/readme/responsive.png)
+![Mockup](\media\readme\responsive.png)
 
 This comprehensive site was designed for a ecommerce site. The focus of the site is to provide a functional ecommerce site with a clean and modern design.
 
