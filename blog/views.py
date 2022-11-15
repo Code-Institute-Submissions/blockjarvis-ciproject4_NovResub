@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib import messages
 from .models import Blog
+from .forms import BlogForm
 
 # Create your views here.
 
@@ -26,3 +28,24 @@ def blog_post(request, blog_id):
     }
     
     return render(request, 'blog/blog_post.html', context)
+
+
+def add_post(request):
+    """ Add a post to blog  """
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added post')
+            return redirect(reverse('add_post'))
+        else:
+            messages.error(request, 'Failed to add post. Please ensure the form is valid.')
+    else:    
+        form = BlogForm()
+
+    template = 'blog/add_post.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
