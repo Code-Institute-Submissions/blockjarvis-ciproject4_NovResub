@@ -26,11 +26,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if contact.image %}
-                                <a href="">
+                                <a href="{% url 'contact_detail' contact.id %}">
                                     <img class="card-img-top img-fluid" src="{{ contact.image.url }}" alt="{{ contact.order }}">
                                 </a>
                                 {% else %}
-                                <a href="">
+                                <a href="{% url 'contact_detail' contact.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ contact.order }}">
                                 </a>
                                 {% endif %}
