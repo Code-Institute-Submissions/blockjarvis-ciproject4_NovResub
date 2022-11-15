@@ -49,3 +49,11 @@ def add_contact(request):
     }
 
     return render(request, template, context)
+
+
+def delete_contact(request, contact_id):
+    """ Delete an order detail from the submitted details """
+    contact = get_object_or_404(Contact, pk=contact_id)
+    contact.delete()
+    messages.success(request, 'Order Details Deleted!')
+    return redirect(reverse('contacts'))
