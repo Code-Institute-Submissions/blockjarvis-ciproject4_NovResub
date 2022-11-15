@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'mocked',
     'howitworks',
     'contact',
+    'blog',
 
     # Other
     'crispy_forms',
