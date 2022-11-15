@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'profiles',
     'mocked',
     'howitworks',
+    'contact',
 
     # Other
     'crispy_forms',
