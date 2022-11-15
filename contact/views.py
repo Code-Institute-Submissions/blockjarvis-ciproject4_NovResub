@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Contact
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -26,3 +27,14 @@ def contact_detail(request, contact_id):
     }
     
     return render(request, 'contact/contact_detail.html', context)
+
+
+def add_contact(request):
+    """ Add an order details  """
+    form = ContactForm()
+    template = 'contact/add_contact.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
