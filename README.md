@@ -114,13 +114,21 @@ The footer provides the user links to the social media accounts (Youtube, Instag
 
 ![Post page](/media/readme/post.png)
 
+### Post Form Page
+
+![New Post page](/media/readme/blogform.png)
+
 ### Submitted Details Page
 
 ![Submitted Details page](/media/readme/submitted.png)
 
-### Submitted Details Page
+### Order Details Page
 
 ![Order Details page](/media/readme/submittedpage.png)
+
+### Order Details Form Page
+
+![Order Details page](/media/readme/detailsform.png)
 
 ## Frameworks, Languages & Programs Used
 
@@ -341,5 +349,5 @@ The AWS account creation and all the process involved was made using the Codeins
 
 ### Acknowledgements
 - [Tim Nelson](https://github.com/TravelTimN) for explaining in a way that makes everything easy.
-- Student care and fellow students at Code Institute for their support.
+- Student care (special thank you to Kieron) and fellow students at Code Institute for their support.
 - I would like to thank my friend, Diego Laterza for his help and guidance through the process.
