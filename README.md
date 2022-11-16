@@ -20,16 +20,18 @@ The purpose is to design an attractive website to buy products and interact with
 ### Returning Visitor Goals
 1. As a Returning Visitor, I want to check products by categories.
 2. As a Returning Visitor, I want to buy products.
-3. As a Returning Visitor, I want to be able to access my profile and check my purchase.
+3. As a Returning Visitor, I want to be able to access my profile, check my purchase and submit order details.
 
 ### Frequent User Goals
 1. As a Frequent User, I want to check new products.
 2. As a Frequent User, I want to try my image on the product.
+3. As a Frequent User, I want to read the blog.
 
 ### Admin Goals
 1. As an Admin User, I want to delete and edit products.
 2. As an Admin User, I want to add more products by category.
-   
+3. As an Admin User, I want to manage a blog. 
+4. As an Admin User, I want to manage order details.  
 
 
 ## Design
@@ -103,6 +105,22 @@ The footer provides the user links to the social media accounts (Youtube, Instag
 ### Checkout Page
 
 ![Checkout page](/media/readme/checkout.png)
+
+### Blog Page
+
+![Blog page](/media/readme/blog.png)
+
+### Post Page
+
+![Post page](/media/readme/post.png)
+
+### Submitted Details Page
+
+![Submitted Details page](/media/readme/submitted.png)
+
+### Submitted Details Page
+
+![Order Details page](/media/readme/submittedpage.png)
 
 ## Frameworks, Languages & Programs Used
 
@@ -222,11 +240,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 2. As a Frequent User, I want to try my image on the product.
     - On try your design, the user can try some text and upload image to test on a t-shirt model.
     - You can resize the image and the text input.
+3. As a Frequent User, I want to read the blog.
+    - You can check all the posts on blog page and click on it to individualy read.
 
 ### Admin Goals
 1. As an Admin User, I want to delete and edit products.
     - The admin can delete or entirely edit the product.
 2. As an Admin User, I want to add more products by category.
+3. As an Admin User, I want to manage a blog.
+    - The admin can delete, edit or add new posts on blog page. 
+4. As an Admin User, I want to manage order details. 
+    - The admin can check the submitted order details, check all the details by order and delete it.
 
 ### Issues
 - Had an issue with Procfile during the deployment to Heroku, file was saved as UTF-16, changed to UTF-8 to fix it.
