@@ -19,3 +19,9 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+#centro {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
