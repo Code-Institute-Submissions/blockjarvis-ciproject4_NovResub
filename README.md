@@ -10,7 +10,7 @@ The main requirements were to build a full-stack site based around business logi
 
 ## UX
 
-The purpose is to design an attractive website to buy products and interact with it, with a simple and intuitive layout that works on mobiles, tablets or desktops.
+The purpose is to design an attractive website to buy products and interact with it, with a simple and intuitive layout that works on mobiles, tablets or desktop.
 
 ## User Stories
 ### First Time Visitor Goals
