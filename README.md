@@ -359,5 +359,5 @@ The AWS account creation and all the process involved was made using the Codeins
 
 ### Acknowledgements
 - [Tim Nelson](https://github.com/TravelTimN) for explaining in a way that makes everything easy.
-- Student care (special thank you to Kieron) and fellow students at Code Institute for their support.
+- Student care (special thank you to Kieron!) and fellow students at Code Institute for their support.
 - I would like to thank my friend, Diego Laterza for his help and guidance through the process.
