@@ -172,6 +172,9 @@ The footer provides the user links to the social media accounts (Youtube, Instag
 ### [Heroku](https://heroku.com/)
 - Heroku was used to deploy our app.
 
+### [ElephantSQL](https://www.elephantsql.com/)
+- ElephantSQL was used as database after Heroku updated their policy.
+
 
 ## Testing
 
@@ -222,6 +225,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 - PowerMapper 
 
 ![PowerMapper](/media/readme/powermapper.png)
+
+- Database Migration to ElephantSQL 
+
+![ElephantSQL](/media/readme/elephant.png)
+
+   - Successfully Database migration to ElephantSQL.
+   - All the CRUD functionality is working as expected on the new database.
 
 ## Testing User Stories from User Experience (UX) Section
 ### First Time Visitor Goals
